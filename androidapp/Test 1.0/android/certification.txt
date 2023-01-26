@@ -1,0 +1,24 @@
+---------------------------------------------------
+Here are the ownership and the certification details
+of the Test 1.0
+---------------------------------------------------
+
+app_name - 						Test
+app_alias - 					test
+app_author_name - 				My Company
+app_author_organizational - 	My Company
+app_author_organization - 		My Company
+app_author_locality - 			My Company
+app_author_state - 				Maharashtra
+app_author_country - 			India
+app_password - 					buj3UQDZTor4
+app_versionName - 				versionName "1.0"
+app_versionCode - 				100
+
+---------------------------------------------------
+The certification was created by WebIntoApp.com at
+the Thursday 26th of January 2023 03:52:37 AM
+
+https://www.webintoapp.com
+---------------------------------------------------
+
