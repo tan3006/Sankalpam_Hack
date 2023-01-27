@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <style>
+         body{
+            background-color: #09142f;
+        }
+        .box {
+            margin-top: 80px;
+
+            background-color:#09142f;
+            width: 1535px;
+            height: 300px;
+            display: flex;
+            justify-content: space-evenly;
+            margin-left:0px;
+        }
+        .box1{
+            margin-top:0px;
+            
+            justify-content:stretch;
+        }
+        .set{
+            display: flex;
+            justify-content: center;
+        }
+        .con {
+            width: 400px;
+            height: 200px;
+            border: 3px solid white;
+            
+            margin-top: 40px;
+            border-radius: 20px;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 200px;
+            
+            font-size: 22px;
+            font-weight: 800;
+        }
+
+        #image1 {
+            background: url("scholar1.jpg") no-repeat center center/cover;
+            position: relative;
+            text-shadow: 1px 1px white;
+            width: 400px;
+            height: 200px;
+            z-index: 200;
+            opacity: 0.85;
+            color: rgb(1, 42, 255);
+        }
+        #image1:hover{
+            opacity:0.6;
+        }
+
+        #image2 {
+            background: url("loan.jpg") no-repeat center center/cover;
+            position: relative;
+            text-shadow: 1px 1px white;
+            width: 400px;
+            height: 200px;
+            z-index: 200;
+            opacity: 0.85;
+            color: rgb(1, 42, 255);
+        }
+        #image2:hover{
+            opacity:0.6;
+        }
+
+        #image3 {
+            background: url("internship1.jpg") no-repeat center center/cover;
+            position: relative;
+            text-shadow: 1px 1px white;
+            width: 400px;
+            height: 200px;
+            z-index: 200;
+            opacity: 0.85;
+            color: rgb(1, 42, 255);
+        }
+        #image3:hover{
+            opacity:0.6;
+        }
+        #image4{
+            margin-left: 300px;
+            margin-right: 50px;
+            background: url("scholar4.jpg") no-repeat center center/cover;
+            position: relative;
+            text-shadow: 1px 1px white;
+            width: 400px;
+            height: 200px;
+            z-index: 200;
+            opacity: 0.8;
+            color: rgb(1, 42, 255);
+        } 
+        #image4:hover{
+            opacity:0.5;
+        }
+        #image5{
+            margin-left:50px;
+            background: url("tax.jpg") no-repeat center center/cover;
+            position: relative;
+            text-shadow: 1px 1px white;
+            width: 400px;
+            height: 200px;
+            z-index: 200;
+            opacity: 0.85;
+            color: rgb(1, 42, 255);
+            
+}
+        #image5:hover{
+            opacity:0.6;
+        }
+        .links{
+            text-decoration: none;
+            font-family: 'Oswald', sans-serif;
+            color:black;
+        } 
+
+    </style>
+</head>
+<body>
+     <div class="box">
+        <div class="image con" id="image1">
+            <a href="scholarship.html" class="links">Scholarships</a>
+        </div>
+        <div class="image con" id="image2" class="links">
+           <a href="Educational.html" class="links">Loan Accessibilities</a>
+        </div>
+        <div class="image con" id="image3" class="links">
+            <a href="Internships.html" class="links">Internships</a>
+        </div>
+    </div>
+    <div class="box box1">
+        <div class="set">
+        <div class="image con" id="image4">
+            <a href="budget.html" class="links">Budget Tracker</a>
+        </div>
+        <div class="image con" id="image5" class="links">
+           <a href="Educational.html" class="links">Tax Excemption Tool</a>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

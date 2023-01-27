@@ -1,0 +1,33 @@
+{
+  "name": "budgetbuddy",
+  "version": "1.0.0",
+  "description": "Budget application intended to help those who have trouble keeping up with their expenses ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon app.js",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/c-beltran/BudgetBuddy.git"
+  },
+  "author": "carlos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/c-beltran/BudgetBuddy/issues"
+  },
+  "homepage": "https://github.com/c-beltran/BudgetBuddy#readme",
+  "dependencies": {
+    "alert-node": "^1.2.3",
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.10.0",
+    "pg": "^8.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.4"
+  }
+}

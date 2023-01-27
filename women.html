@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            font-family: "Montserrat Medium";
+            max-width: 40ch;
+            text-align: center;
+            transform: scale(0.94);
+            animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
+        }
+
+        @keyframes scale {
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        span {
+            display: inline-block;
+            opacity: 0;
+            filter: blur(4px);
+        }
+
+        span:nth-child(1) {
+            animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        span:nth-child(2) {
+            animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        span:nth-child(3) {
+            animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        span:nth-child(4) {
+            animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        span:nth-child(5) {
+            animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        span:nth-child(6) {
+            animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        span:nth-child(7) {
+            animation: fade-in 0.8s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        span:nth-child(8) {
+            animation: fade-in 0.8s 0.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        span:nth-child(9) {
+            animation: fade-in 0.8s 0.9s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        span:nth-child(10) {
+            animation: fade-in 0.8s 1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        span:nth-child(11) {
+            animation: fade-in 0.8s 1.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        span:nth-child(12) {
+            animation: fade-in 0.8s 1.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        span:nth-child(13) {
+            animation: fade-in 0.8s 1.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        span:nth-child(14) {
+            animation: fade-in 0.8s 1.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        span:nth-child(15) {
+            animation: fade-in 0.8s 1.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        span:nth-child(16) {
+            animation: fade-in 0.8s 1.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        span:nth-child(17) {
+            animation: fade-in 0.8s 1.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        span:nth-child(18) {
+            animation: fade-in 0.8s 1.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+        }
+
+        @keyframes fade-in {
+            100% {
+                opacity: 1;
+                filter: blur(0);
+            }
+        }
+
+        .flip-card {
+            background-color: transparent;
+            width: 250px;
+            height: 500px;
+            perspective: 1000px;
+            font-family: sans-serif;
+        }
+
+        .title {
+            font-size: 1.5em;
+            font-weight: 900;
+            text-align: center;
+            margin: 0;
+        }
+
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.8s;
+            transform-style: preserve-3d;
+        }
+
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .flip-card-front,
+        .flip-card-back {
+            box-shadow: 0 8px 14px 0 rgba(0, 0, 0, 0.2);
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+            border: 1px solid coral;
+            border-radius: 1rem;
+        }
+
+        .flip-card-front {
+            background: linear-gradient(120deg, bisque 60%, rgb(255, 231, 222) 88%);
+                    
+            color: coral;
+        }
+
+        .flip-card-back {
+            background: linear-gradient(120deg, rgb(255, 174, 145) 30%, coral 88%);
+            color: white;
+            transform: rotateY(180deg);
+        }
+
+        .container {
+            width: 1500px;
+            height: 500px;
+            margin-top: 80px;
+            display: flex;
+            justify-content: space-evenly;
+
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .btn-donate {
+            --clr-font-main: hsla(0 0% 20% / 100);
+            --btn-bg-1: rgb(255, 171, 97);
+            --btn-bg-2: rgb(255, 117, 31);
+            --btn-bg-color: hsla(360 100% 100% / 1);
+            --radii: 0.5em;
+            cursor: pointer;
+            padding: 0.9em 1.4em;
+            min-width: 120px;
+            min-height: 44px;
+            font-size: var(--size, 1rem);
+            font-family: "Segoe UI", system-ui, sans-serif;
+            font-weight: 500;
+            transition: 0.8s;
+            background-size: 280% auto;
+            background-image: linear-gradient(325deg, var(--btn-bg-2) 0%, var(--btn-bg-1) 55%, var(--btn-bg-2) 90%);
+            border: none;
+            border-radius: var(--radii);
+            color: var(--btn-bg-color);
+            box-shadow: 0px 0px 20px rgba(71, 184, 255, 0.5), 0px 5px 5px -1px rgba(58, 125, 233, 0.25), inset 4px 4px 8px rgba(175, 230, 255, 0.5), inset -4px -4px 8px rgba(19, 95, 216, 0.35);
+        }
+
+        .btn-donate:hover {
+            background-position: right top;
+        }
+
+        .btn-donate:is(:focus, :focus-within, :active) {
+            outline: none;
+            box-shadow: 0 0 0 3px var(--btn-bg-color), 0 0 0 6px var(--btn-bg-2);
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .btn-donate {
+                transition: linear;
+            }
+        }
+        .fitter{
+            margin-top:15px;
+            width:250px;
+            height:40px;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        <span>Women's</span>
+        <span>Scholarship</span>
+
+    </h1>
+    <!--Brian Tracy-->
+
+
+    <div class="container">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <p class="title">National</p>
+                    <p>AICTE Pragati Scholarship
+                    </p>
+                </div>
+                <div class="flip-card-back">
+                    <marquee behavior="scroll" direction="up" scrollamount="2" style="text-align:center;">
+                        Pragati is a MHRD Scheme being implemented by of AICTE aimed at providing
+                        assistance for Advancement of Girls pursuing Technical Education. Education is one of
+                        the most important means of empowering women with the knowledge, skill and selfconfidence necessary to participate fully in the development process. This is an attempt
+                        to give young Women the opportunity to further her education and prepare for a
+                        successful future by “Empowering Women through Technical Education”
+                        
+                    </marquee>
+                </div>
+
+            </div>
+            <button class="btn-donate fitter">
+                <a href="https://www.aicte-pragati-saksham-gov.in/">Go to Website</a>
+            </button>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <p class="title">National</p>
+                    <p>Avasar NGO Scholarship
+                    </p>
+                </div>
+                <div class="flip-card-back">
+                    <marquee behavior="scroll" direction="up" scrollamount="2" style="text-align:center;">
+                        Avasar Foundation strongly believes that, “Ability is nothing without opportunity.” Founded in 2012, Avasar has come a long way since its inception. Avasar encompasses large-scale projects in the areas of Girls’ education and digital literacy. Based out of Bangalore Avasar has now extended its ambit across 5 cities in India- Delhi NCR, Hyderabad, Chennai, and Pune.
+                    </marquee>
+
+                </div>
+
+            </div>
+            <button class="btn-donate fitter">
+                <a href="https://www.avasar.ngo/afs/">Go to Website</a>
+            </button>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <p class="title">National</p>
+                    <p>CBSE Scholarship for Single Girl Child
+                    </p>
+                </div>
+                <div class="flip-card-back">
+                    <marquee behavior="scroll" direction="up" scrollamount="2" style="text-align:center;">
+                        The objective of CBSE merit scholarship scheme is to provide scholarships to the meritorious Single Girl Students, who are the only child of their parents; and have passed the CBSE Class X Examination with 60% or more marks and are continuing their further school education of Class XI and XII.
+                            
+                    </marquee>
+
+                </div>
+
+            </div>
+            <button class="btn-donate fitter">
+                <a href="https://cbseit.in/cbse/2022/sgcx/default.aspx">Go to Website</a>
+            </button>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <p class="title">National</p>
+                    <p>Ministry of Education Scholarship for Girls
+                    </p>
+                </div>
+                <div class="flip-card-back">
+                    <marquee behavior="scroll" direction="up" scrollamount="2" style="text-align:center;">
+                        The Scheme is in operational since 2008. The objective of the scheme is to provide financial assistance to the meritorious students having family income of less than Rs.4.5 lakh per annum, to meet a part of their day-to-day expenses while pursuing higher studies. Annual target is 82000 scholarships per year (41000 for boys and 41000 for girls) which has been divided amongst the State Education Boards based on the State’s population in the age group of 18-25 years. Students who are above 80th percentile of successful candidates in the relevant stream from a particular Board of Examination in class XII and pursuing regular course and not availing benefit of any other scholarships, are eligible to apply under this Scheme. The rate of scholarship is Rs. 12,000/- per annum for the first three years and Rs. 20,000/- per annum for the fourth and fifth year.
+                    </marquee>
+
+                </div>
+
+            </div>
+            <button class="btn-donate fitter">
+                <a href="https://www.education.gov.in/en/scholarships-education-loan-0">Go to Website</a>
+            </button>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <p class="title">National</p>
+                    <p>UGC women Scholarship
+                    </p>
+                </div>
+                <div class="flip-card-back">
+                    <marquee behavior="scroll" direction="up" scrollamount="2" style="text-align:center;">
+                        The UGC has initiated a scheme of UGC Woman Fellowship 2023 for Women to those candidates, who are unemployed holding Ph. D. degree in their respective subject areas with an aim to accelerate the talented instincts of the women candidates to carry out the advanced studies and research.
+                    </marquee>
+                </div>
+
+            </div>
+            <button class="btn-donate fitter">
+                <a href="http://www.ugc.ac.in">Go to Website</a>
+            </button>
+        </div>
+        
+</body>
+
+</html>
